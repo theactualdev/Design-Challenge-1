@@ -23,7 +23,7 @@ function App() {
         <button className='bg-textBlack text-white font-bold mt-6 py-4 rounded-2xl'>Explore</button>
       </div>
 
-      <div className="grid grid-cols-4 gap-4 mt-16">
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-16">
         {imageArray.map((image, index) => (
           <div key={index} className='relative'>
             <img src={image} alt='image' className='rounded-2xl' />
