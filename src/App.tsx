@@ -10,6 +10,10 @@ import image8 from './assets/eight.svg'
 
 let imageArray = [image1, image2, image3, image4, image5, image6, image7, image8];
 
+let date = new Date();
+
+let year = date.getFullYear()
+
 function App() {
   return (
     <>
@@ -26,6 +30,15 @@ function App() {
           </div>
         ))}
       </div>
+
+      <footer className='bg-textBlack w-screen text-center mt-12 flex justify-around text-white'>
+        <div className="copyright">
+          Copyright &copy; {year} theactualdev
+        </div>
+        <div className="figma">
+          <a href="https://www.figma.com/file/4UbuQuyAc6FheovBkMGNKo/50%2B-Landing-page-designs-(Community)?type=design&node-id=801-2256&mode=design&t=kAbcYUHhTx6zYf5d-0" target='_blank'>Figma</a>
+        </div>
+      </footer>
     </>
   )
 }
